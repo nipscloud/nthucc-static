@@ -35,11 +35,3 @@ button, .ant-table-column-title, .ant-modal-title, .block-title, .btn, .form-gro
        url('./static/NotoColorEmojiFlag.woff') format('woff')
 }
 */
-
-.package-description-en {
-  display: none;
-}
-
-.package-description-zh {
-  font-variant-east-asian: normal!important;
-}
