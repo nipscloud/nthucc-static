@@ -1,13 +1,12 @@
-if(navigator.language.startsWith("zh")){
-   /* hide english div when browswer language is Chinese */
-   var packages_en = document.getElementsByClassName("package-description-en"); 
-   packages_en.length? Array.from(packages_en).forEach(x => x.style = "display: none"):void(0);
-}else{
-  /* hide chinese div */
-   var packages_zh = document.getElementsByClassName("package-description-zh"); 
-   packages_zh.length? Array.from(packages_zh).forEach(x => x.style = "display: none"):void(0);
-}
+var langCss = document.createElement("link");
+langCss.setAttribute("rel", "stylesheet");
+langCss.setAttribute("type", "text/css");
 
-console.log(document.getElementsByClassName("package-description-en"));
-console.log(document.getElementsByClassName("package-description-zh"));
-console.log(navigator.language);
+if(navigator.language.startsWith("en")){
+   /* hide chinese div when browser language is English */
+   langCss.setAttribute("href", "https://cdn.jsdelivr.net/gh/nipscloud/nthucc-img@main/js/package-en.js")
+   console.log(navigator.language, "use Engish env");
+}else{
+   langCss.setAttribute("href", "https://cdn.jsdelivr.net/gh/nipscloud/nthucc-img@main/js/package-zh.js");
+   console.log(navigator.language, "use Chinese env";
+}
