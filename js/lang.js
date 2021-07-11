@@ -8,4 +8,4 @@ if(navigator.language.startsWith("zh")){
    packages_zh.length? Array.from(packages_zh).forEach(x => x.style = "display: none"):void(0);
 }
 
-console.log("test");
+console.log(navigator.language);
