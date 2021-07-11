@@ -2,8 +2,10 @@ var userLang = navigator.language;
 
 if(userLang === "zh"){
    /* hide english div when browswer language is Chinese */
-  document.getElementsByClassName("package-description-en").length? document.getElementsByClassName("package-description-en").forEach(x => x.style = "display: none"):void(0);
+   var packages_en = document.getElementsByClassName("package-description-en"); 
+   packages_en.length? Array.from(packages_en).forEach(x => x.style = "display: none"):void(0);
 }else{
   /* hide chinese div */
-  document.getElementsByClassName("package-description-zh").length? document.getElementsByClassName("package-description-zh").forEach(x => x.style = "display: none"):void(0);
+   var packages_zh = document.getElementsByClassName("package-description-zh"); 
+   packages_zh.length? Array.from(packages_zh).forEach(x => x.style = "display: none"):void(0);
 }
