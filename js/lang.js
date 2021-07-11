@@ -8,5 +8,5 @@ if(navigator.language.startsWith("en")){
    console.log(navigator.language, "use Engish env");
 }else{
    langCss.setAttribute("href", "https://cdn.jsdelivr.net/gh/nipscloud/nthucc-img@main/js/package-zh.js");
-   console.log(navigator.language, "use Chinese env";
+   console.log(navigator.language, "use Chinese env");
 }
