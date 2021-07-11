@@ -36,16 +36,7 @@ button, .ant-table-column-title, .ant-modal-title, .block-title, .btn, .form-gro
 }
 */
 
-/* displayc chinese when browser language is chinese */
-.package-description-zh[lang="zh"] {
+
+.package-description-zh {
   font-variant-east-asian: normal!important;
 }
-/* not display chinese when browser language is not chinese */
-.package-description-zh[lang|="zh"] {
-  display: none;
-}
-/* not display english when browser language is chinese */
-.package-description-en[lang="zh"] {
-  display: none;
-}
-/* always display english otherwise */
