@@ -10,3 +10,5 @@ if(navigator.language.startsWith("en")){
    langCss.setAttribute("href", "https://cdn.jsdelivr.net/gh/nipscloud/nthucc-img@main/js/package-zh.js");
    console.log(navigator.language, "use Chinese env");
 }
+
+document.head.appendChild(langCss);
