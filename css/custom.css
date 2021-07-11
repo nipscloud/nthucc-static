@@ -39,7 +39,3 @@ button, .ant-table-column-title, .ant-modal-title, .block-title, .btn, .form-gro
 .package-description-zh {
   font-variant-east-asian: normal!important;
 }
-
-.package-description-en {
-  display: none;
-}
