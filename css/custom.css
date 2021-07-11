@@ -36,6 +36,10 @@ button, .ant-table-column-title, .ant-modal-title, .block-title, .btn, .form-gro
 }
 */
 
+.package-description-en {
+  font-variant-east-asian: normal!important;
+}
+
 .package-description-zh {
-  display: none;
+  font-variant-east-asian: normal!important;
 }
