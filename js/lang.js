@@ -1,6 +1,6 @@
 var userLang = navigator.language;
 
-if(userLang === "zh){
+if(userLang === "zh"){
    /* hide english div when browswer language is Chinese */
   document.getElementsByClassName("package-description-en").length? document.getElementsByClassName("package-description-en").forEach(x => x.style = "display: none"):void(0);
 }else{
