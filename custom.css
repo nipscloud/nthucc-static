@@ -36,16 +36,16 @@ button, .ant-table-column-title, .ant-modal-title, .block-title, .btn, .form-gro
 }
 */
 
-/* not display chinese when browser language is not chinese */
-.package-description-zh {
-  display: none;
-}
-/* displaycChinese when browser language is chinese */
-:lang(zh) .package-description-zh {
+/* displayc chinese when browser language is chinese */
+.package-description-zh[lang="zh"] {
   font-variant-east-asian: normal!important;
 }
+/* not display chinese when browser language is not chinese */
+.package-description-zh[lang|="zh"] {
+  display: none;
+}
 /* not display english when browser language is chinese */
-:lang(zh) .package-description-en {
+.package-description-en[lang="zh"] {
   display: none;
 }
 /* always display english otherwise */
