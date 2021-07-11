@@ -41,11 +41,11 @@ button, .ant-table-column-title, .ant-modal-title, .block-title, .btn, .form-gro
   display: none;
 }
 /* displaycChinese when browser language is chinese */
-html[lang*="zh"] .package-description-zh {
+:lang(zh) .package-description-zh {
   font-variant-east-asian: normal!important;
 }
 /* not display english when browser language is chinese */
-html[lang*="zh"] .package-description-en {
+:lang(zh) .package-description-en {
   display: none;
 }
 /* always display english otherwise */
