@@ -10,13 +10,18 @@ jobs:
     steps:
       - name: Checkout resources
         uses: actions/checkout@v2
+      - name: Set tag_name and release_name
+        run: |
+          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+          echo "RELEASE_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+        shell: bash
       - name: Create a release
         id: create_release
         uses: actions/create-release@v1.1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: $(date +%Y%m%d%H%M)
-          release_name: $(date +%Y%m%d%H%M)
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: ${{ env.RELEASE_NAME }}
           draft: false
           prerelease: false
