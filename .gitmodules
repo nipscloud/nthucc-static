@@ -1,6 +1,0 @@
-[submodule "v2board-user"]
-	path = v2board-user
-	url = https://github.com/nipscloud/v2board-user.git
-[submodule "v2board-admin"]
-	path = v2board-admin
-	url = https://github.com/nipscloud/v2board-admin.git
