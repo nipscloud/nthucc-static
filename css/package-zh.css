@@ -1,0 +1,7 @@
+.package-description-en {
+  display: none;
+}
+
+.package-description-zh {
+  font-variant-east-asian: normal!important;
+}
